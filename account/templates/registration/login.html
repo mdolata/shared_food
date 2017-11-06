@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Logowanie {% endblock %}
+
+{% block content %}
+<h1>Logowanie</h1>
+
+<div>
+<form action="{% url 'login' %}" method="post">
+    <div class="imgcontainer">
+
+    </div>
+    <div class="container">
+
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+
+        <p>
+        <button type="submit">Zaloguj</button>
+        </p>
+        <p><a href="{% url "password_reset" %}">Zapomniales hasla?</a> </p>
+        <p><a href="{% url "register" %}">Zarejestruj nowe konto</a></p>
+    </div>
+</form>
+    </div>
+{% endblock %}

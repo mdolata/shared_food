@@ -1,0 +1,58 @@
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+#header {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+}
+
+form {
+    border: 6px solid #f1f1f1;
+    max-width: 300px;
+    margin: auto;
+}
+
+.container {
+    padding: 16px;
+}
+
+p {
+	text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+input[type=text], input[type=password] {
+    max-width: 300px;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.navbar{
+    border-radius:0;
+}
+
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
+}
