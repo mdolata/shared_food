@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+ background-color: #efefef;
   text-align: center;
 }
 
@@ -12,8 +12,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #efefef;
+  min_width: 400;
 }
 
 form {
@@ -33,11 +34,11 @@ p {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 input[type=text], input[type=password] {
@@ -55,4 +56,10 @@ input[type=text], input[type=password] {
 
 .navbar-brand{
     font-family: 'Satisfy', cursive;
+}
+
+div a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
