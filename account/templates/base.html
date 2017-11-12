@@ -44,20 +44,24 @@
                         <li class="{% if  "myOrders" in  request.path  %}
                                 active
                             {% endif %}" >
-                            <a href="#">
+                            <a href="{% url "myOrders" %}">
                                 Moje zamówienia
                             </a>
                         </li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="">
+                        <li class="{% if  "myAccount" in  request.path  %}
+                                active
+                            {% endif %}">
                             <a href="#">
                                 {{ request.user.first_name }}</a>
                             <!--<a href="{% url 'password_change' %}">Zmien haslo</a>-->
                         </li>
-                        <li class="" >
-                            <a href="#">
+                        <li class="{% if  "newOrder" in  request.path  %}
+                                active
+                            {% endif %}" >
+                            <a href="{% url "newOrder" %}">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Nowe żarcie
                             </a>
                         </li>

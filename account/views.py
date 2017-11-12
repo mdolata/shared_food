@@ -27,3 +27,16 @@ def dashboard(request):
     return render(request,
                   'account/dashboard.html',
                   {'section': dashboard})
+
+
+@login_required
+def neworder(request):
+    return render(request,
+                  'account/newOrderForm.html',
+                  {})
+
+@login_required
+def myorders(request):
+    return render(request,
+                  'account/myOrders.html',
+                  {})
