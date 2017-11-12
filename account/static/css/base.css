@@ -19,7 +19,7 @@
 
 form {
     border: 6px solid #f1f1f1;
-    max-width: 300px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -41,7 +41,7 @@ button {
     max-width: 200px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email]{
     max-width: 300px;
     padding: 12px 20px;
     text-align: center;
@@ -58,8 +58,8 @@ input[type=text], input[type=password] {
     font-family: 'Satisfy', cursive;
 }
 
-div a {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+
+
+th, td {
+ padding: 5px;
 }

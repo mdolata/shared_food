@@ -3,10 +3,16 @@
 {% block title %} Tworzenie konta {% endblock %}
 
 {% block content %}
-<h1>Utworz nowe konto</h1>
+<h1 align="center">Utworz nowe konto</h1>
 
 <form action="." method="post">
-    {{ user_form.as_p }}
+    <table align="center">
+        {% for field in user_form %}
+          <tr><th>{{ field.label_tag }}</th><th>{{ field }}</th></tr>
+        {% if field.errors %}
+          <tr><th></th><th>{{ field.errors }}</th></tr>{% endif %}
+        {% endfor %}
+    </table>
     {% csrf_token %}
     <p> <input type="submit" value="Utworz konto"></p>
 </form>

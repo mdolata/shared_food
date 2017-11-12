@@ -12,7 +12,14 @@
 
             </div>
             <p>
-                {{ form.as_p }}
+                <table align="center">
+                    {% for field in form %}
+                    <tr><th>{{ field.label_tag }}</th><th>{{ field }}</th></tr>
+                    {% if field.errors %}
+                        <tr><th></th><th>{{ field.errors }}</th></tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
                 {% csrf_token %}
                 <input type="hidden" name="next" value="{{ next }}">
             </p>
