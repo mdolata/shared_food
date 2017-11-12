@@ -27,19 +27,25 @@
                 </div>
                 <div class="collapse navbar-collapse" id="topNavBar">
                     <ul class="nav navbar-nav">
-                        <li class="active" >
+                        <li class="{% if  "myDeptors" in  request.path  %}
+                                active
+                            {% endif %}" >
                             <a href="#">
                                 Dłużnicy
                             </a>
                         </li>
-                        <li class="" >
+                        <li class="{% if  "myDebpts" in  request.path  %}
+                                active
+                            {% endif %}" >
                             <a href="#">
                                 Moje długi
                             </a>
                         </li>
-                        <li class="" >
+                        <li class="{% if  "myOrders" in  request.path  %}
+                                active
+                            {% endif %}" >
                             <a href="#">
-                                Moje żarcie
+                                Moje zamówienia
                             </a>
                         </li>
                     </ul>
@@ -67,6 +73,7 @@
      {% endif %}
 
     </div>
+
     <div id="content">
         {% block content %}
         {% endblock %}
